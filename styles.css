@@ -1,0 +1,18 @@
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 
+    'attributes display saved';
+}
+
+.attributes {
+  grid-area: attributes;
+}
+
+.display {
+  grid-area: display;
+}
+
+.saved {
+  grid-area: saved;
+}
