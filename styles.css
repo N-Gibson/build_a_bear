@@ -1,3 +1,7 @@
+h1 {
+  text-align: center;
+}
+
 main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -7,12 +11,22 @@ main {
 
 .attributes {
   grid-area: attributes;
+  padding: 20px;
 }
 
 .display {
+  display: flex;
+  flex-direction: column;
   grid-area: display;
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
 }
 
 .saved {
   grid-area: saved;
+  padding: 20px;
 }
