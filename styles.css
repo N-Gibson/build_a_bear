@@ -26,6 +26,12 @@ form {
   flex-direction: column;
 }
 
+#name_outfit_input,
+#save_outfit_button {
+  height: 30px;
+  margin: 5px;
+}
+
 .saved {
   grid-area: saved;
   padding: 20px;
