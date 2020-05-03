@@ -32,6 +32,12 @@ form {
   margin: 5px;
 }
 
+button:hover {
+  color: #fff;
+  cursor: pointer;
+  background-color: rebeccapurple;
+}
+
 .saved {
   grid-area: saved;
   padding: 20px;
