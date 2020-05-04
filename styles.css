@@ -1,0 +1,44 @@
+h1 {
+  text-align: center;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 
+    'attributes display saved';
+}
+
+.attributes {
+  grid-area: attributes;
+  padding: 20px;
+}
+
+.display {
+  display: flex;
+  flex-direction: column;
+  grid-area: display;
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+#name_outfit_input,
+#save_outfit_button {
+  height: 30px;
+  margin: 5px;
+}
+
+button:hover {
+  color: #fff;
+  cursor: pointer;
+  background-color: rebeccapurple;
+}
+
+.saved {
+  grid-area: saved;
+  padding: 20px;
+}
