@@ -1,6 +1,6 @@
 class Outfits {
   constructor() {
-    this.id = "",
+    this.id = null,
     this.title = "",
     this.garments = [],
     this.background = ""
