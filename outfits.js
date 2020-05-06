@@ -6,11 +6,13 @@ class Outfits {
     this.background = ""
   }
 
-  addGarment() {
-
+  addGarment(garment) {
+    this.garments.push(garment)
   }
 
-  removeGarment() {
+  removeGarment(garment) {
+    const garmentFilter = this.garments.filter(garments => garments !== garment);
 
+    this.garments = garmentFilter;
   }
 }
