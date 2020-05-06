@@ -1,6 +1,8 @@
 const outfitCollection = [];
+const main = document.querySelector('main');
 
-function $(selector) {
-  let query = document.querySelector(selector);
+main.addEventListener('click', $(e.target));
 
-}
+// function $(selector) {
+//   console.log(selector);
+// }
