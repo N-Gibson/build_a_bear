@@ -14,5 +14,3 @@ class Outfits {
 
   }
 }
-
-export default Outfits;
