@@ -1,5 +1,5 @@
 const outfitCollection = [];
-const main = document.querySelector("main");
+const main = document.querySelector('main');
 
 main.addEventListener('click', () => {
   if (event.target.id) {
@@ -12,5 +12,10 @@ main.addEventListener('click', () => {
 });
 
 function $(selector) {
-  console.log(selector);
+  const bearContainer = document.querySelector('.bear_container');
+  const pngName = selector.split(' ');
+
+  console.log(pngName);
+
+  // bearContainer.insertAdjacentHTML('beforeend', `<img src=${}>`)
 }
