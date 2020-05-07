@@ -1,4 +1,5 @@
 const outfitCollection = [];
+const garmentCollection = [];
 const main = document.querySelector('main');
 
 main.addEventListener('click', () => {
@@ -14,5 +15,5 @@ main.addEventListener('click', () => {
 function $(selector) {
   const bearContainer = document.querySelector('.bear_container');
 
-  bearContainer.insertAdjacentHTML('beforeend', `<img id=${selector}${"_identifier"} src=assets/${selector}${".png"}>`)
+  bearContainer.insertAdjacentHTML('beforeend', `<img id=${selector}${"_identifier"} src=assets/${selector}${".png"}>`);  
 }
