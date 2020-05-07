@@ -13,9 +13,6 @@ main.addEventListener('click', () => {
 
 function $(selector) {
   const bearContainer = document.querySelector('.bear_container');
-  const pngName = selector.split(' ');
 
-  console.log(pngName);
-
-  // bearContainer.insertAdjacentHTML('beforeend', `<img src=${}>`)
+  bearContainer.insertAdjacentHTML('beforeend', `<img id=${selector}${"_identifier"} src=assets/${selector}${".png"}>`)
 }
