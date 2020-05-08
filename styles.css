@@ -117,3 +117,25 @@ button:hover {
   position: absolute;
   transform: rotate(15deg)
 }
+
+#tshirt_identifier {
+  height: 300px;
+  left: 535px;
+  position: absolute;
+  top: 305px;
+  transform: rotate(7deg);
+}
+
+#dress_identifier {
+  height: 350px;
+  left: 530px;
+  position: absolute;
+  top: 160px;
+  transform: rotate(5deg);
+}
+
+#vest_identifier {
+  height: 500px;
+  left: 460px;
+  position: absolute;
+}
