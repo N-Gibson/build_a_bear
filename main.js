@@ -4,15 +4,15 @@ const main = document.querySelector('main');
 
 main.addEventListener('click', () => {
   if (event.target.id) {
-    $(event.target.id, event.target);
+    toggleGarments(event.target.id, event.target);
   } else if (event.target.class) {
-    $(event.target.class, event.target);
+    toggleGarments(event.target.class, event.target);
   } else {
     return;
   }
 });
 
-function $(selector, element) {
+function toggleGarments(selector, element) {
   const bearContainer = document.querySelector('.bear_container');
   let img;
 
