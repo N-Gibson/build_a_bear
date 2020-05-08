@@ -103,6 +103,7 @@ button:hover {
   left: 675px;
   position: absolute;
   transform: rotate(10deg);
+  z-index: 15;
 }
 
 #sunhat_identifier {
@@ -111,13 +112,15 @@ button:hover {
   position: absolute;
   top: 20px;
   transform: rotate(-10deg);
+  z-index: 15;
 }
 
 #crown_identifier {
   height: 100px;
   left: 675px;
   position: absolute;
-  transform: rotate(15deg)
+  transform: rotate(15deg);
+  z-index: 15;
 }
 
 #tshirt_identifier {
@@ -126,6 +129,7 @@ button:hover {
   position: absolute;
   top: 305px;
   transform: rotate(7deg);
+  z-index: 15;
 }
 
 #dress_identifier {
@@ -134,12 +138,14 @@ button:hover {
   position: absolute;
   top: 160px;
   transform: rotate(5deg);
+  z-index: 15;
 }
 
 #vest_identifier {
   height: 500px;
   left: 460px;
   position: absolute;
+  z-index: 15;
 }
 
 #bowtie_identifier {
@@ -148,6 +154,7 @@ button:hover {
   position: absolute;
   top: 285px;
   transform: rotate(10deg);
+  z-index: 15;
 }
 
 #hairbow_identifier {
@@ -156,6 +163,7 @@ button:hover {
   position: absolute;
   top: 105px;
   transform: rotate(20deg);
+  z-index: 15;
 }
 
 #necklace_identifier {
@@ -164,6 +172,7 @@ button:hover {
   position: absolute;
   top: 300px;
   transform: rotate(10deg);
+  z-index: 15;
 }
 
 #park_identifier,
