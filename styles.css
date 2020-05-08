@@ -7,7 +7,7 @@ h1 {
   background-color: #F5F5F5;
   box-shadow: 0 4px 2px -2px lightgray;
   margin: 0px;
-  padding: 10px;
+  padding: 20px;
   text-align: center;
 }
 
@@ -16,6 +16,10 @@ main {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: 
     'attributes display saved';
+}
+
+#bear {
+  height: 500px;
 }
 
 .attributes {
@@ -31,20 +35,33 @@ main {
 }
 
 form {
+  align-items: center;
   display: flex;
   flex-direction: column;
 }
 
-#name_outfit_input,
-#save_outfit_button {
+#name_outfit_input {
+  border-radius: 5px;
+  font-size: .8em;
   height: 30px;
   margin: 5px;
+  width: 285px;
+  padding-left: 10px;
+}
+
+#save_outfit_button {
+  border-radius: 5px;
+  font-size: .8em;
+  height: 30px;
+  margin: 5px;
+  width: 300px;
 }
 
 button:hover {
+  background-color: rebeccapurple;
+  border-radius: 5px;
   color: #fff;
   cursor: pointer;
-  background-color: rebeccapurple;
 }
 
 .saved {
