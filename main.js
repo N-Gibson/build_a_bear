@@ -5,8 +5,11 @@ const main = document.querySelector('main');
 main.addEventListener('click', () => {
   if ( event.target.id === 'save_outfit_button' ) {
     console.log('ok');
+  } else if ( event.target.id === 'bear' ) {
+    return;
   } else if ( event.target.id ) {
     toggleGarments(event.target.id, event.target);
+    toggleActiveButton(event.target);
   } else {
     return;
   }
@@ -34,3 +37,8 @@ function toggleGarments(selector, element) {
     img.remove();
   } 
 };
+
+function toggleActiveButton(button) {
+  const targetButton = document.getElementById(button.id);
+  targetButton.classList.toggle('active_button');
+}
