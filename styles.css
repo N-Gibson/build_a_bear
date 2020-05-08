@@ -139,3 +139,27 @@ button:hover {
   left: 460px;
   position: absolute;
 }
+
+#bowtie_identifier {
+  height: 90px;
+  left: 645px;
+  position: absolute;
+  top: 285px;
+  transform: rotate(10deg);
+}
+
+#hairbow_identifier {
+  height: 100px;
+  left: 700px;
+  position: absolute;
+  top: 105px;
+  transform: rotate(20deg);
+}
+
+#necklace_identifier {
+  height: 60px;
+  left: 635px;
+  position: absolute;
+  top: 300px;
+  transform: rotate(10deg);
+}
