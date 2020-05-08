@@ -97,7 +97,23 @@ button:hover {
 }
 
 #tophat_identifier {
-  height: 120px;
+  height: 100px;
+  left: 675px;
   position: absolute;
-  left: 660px;
+  transform: rotate(10deg);
+}
+
+#sunhat_identifier {
+  height: 250px;
+  left: 620px;
+  position: absolute;
+  top: 20px;
+  transform: rotate(-10deg);
+}
+
+#crown_identifier {
+  height: 100px;
+  left: 675px;
+  position: absolute;
+  transform: rotate(15deg)
 }
