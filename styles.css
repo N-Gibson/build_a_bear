@@ -1,4 +1,13 @@
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 0px;
+}
+
 h1 {
+  background-color: #F5F5F5;
+  box-shadow: 0 4px 2px -2px lightgray;
+  margin: 0px;
+  padding: 10px;
   text-align: center;
 }
 
