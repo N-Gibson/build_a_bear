@@ -26,6 +26,8 @@ main {
 
 #bear {
   height: 500px;
+  position: sticky;
+  z-index: 10;
 }
 
 .attributes {
@@ -162,4 +164,14 @@ button:hover {
   position: absolute;
   top: 300px;
   transform: rotate(10deg);
+}
+
+#park_identifier,
+#beach_identifier,
+#outerspace_identifier {
+  height: 500px;
+  left: 465px;
+  position: absolute;
+  width: 500px;
+  z-index: 1;
 }
