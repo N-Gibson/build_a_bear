@@ -42,3 +42,9 @@ button:hover {
   grid-area: saved;
   padding: 20px;
 }
+
+#tophat_identifier {
+  height: 120px;
+  position: absolute;
+  left: 660px;
+}
