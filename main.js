@@ -1,10 +1,12 @@
-const outfitCollection = [];
-const garmentCollection = [];
+let outfitCollection = [];
+let garmentCollection = [];
+let backgroundCollection = [];
 const main = document.querySelector('main');
 
 main.addEventListener('click', () => {
   if ( event.target.id === 'save_outfit_button' ) {
     console.log('ok');
+    //Run the save function
   } else if ( event.target.id === 'bear' ) {
     return;
   } else if ( event.target.id ) {
@@ -22,7 +24,8 @@ function toggleGarments(selector, element) {
   if ( element.dataset.active === 'false' ) {
     element.dataset.active = 'true';
 
-    bearContainer.insertAdjacentHTML('beforeend', `<img id=${selector}${"_identifier"} src=assets/${selector}${".png"}>`); 
+    bearContainer.insertAdjacentHTML('beforeend', `<img id=${selector}${"_identifier"} src=assets/${selector}${".png"}>`);
+
   } else {
     element.dataset.active = 'false'
 
@@ -32,10 +35,10 @@ function toggleGarments(selector, element) {
       if ( node.id === targetElement ) {
         img = node
       }
-    })
+    });
 
     img.remove();
-  } 
+  }
 };
 
 function toggleActiveButton(button) {
