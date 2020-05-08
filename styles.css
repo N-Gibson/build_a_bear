@@ -27,6 +27,21 @@ main {
   padding: 20px;
 }
 
+.hats,
+.clothes,
+.accessories,
+.backgrounds {
+  display: flex;
+}
+
+button {
+  border-radius: 5px;
+  font-size: .8em;
+  height: 30px;
+  margin: 5px;
+  width: 100px;
+}
+
 .display {
   display: flex;
   flex-direction: column;
@@ -43,7 +58,7 @@ form {
 #name_outfit_input {
   border-radius: 5px;
   font-size: .8em;
-  height: 30px;
+  height: 40px;
   margin: 5px;
   width: 285px;
   padding-left: 10px;
@@ -52,7 +67,7 @@ form {
 #save_outfit_button {
   border-radius: 5px;
   font-size: .8em;
-  height: 30px;
+  height: 40px;
   margin: 5px;
   width: 300px;
 }
