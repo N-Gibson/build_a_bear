@@ -3,10 +3,10 @@ const garmentCollection = [];
 const main = document.querySelector('main');
 
 main.addEventListener('click', () => {
-  if (event.target.id) {
+  if ( event.target.id === 'save_outfit_button' ) {
+    console.log('ok');
+  } else if ( event.target.id ) {
     toggleGarments(event.target.id, event.target);
-  } else if (event.target.class) {
-    toggleGarments(event.target.class, event.target);
   } else {
     return;
   }
@@ -33,4 +33,4 @@ function toggleGarments(selector, element) {
 
     img.remove();
   } 
-}
+};

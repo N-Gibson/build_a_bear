@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -11,8 +12,8 @@
   <h1>Build A Bear</h1>
   <main>
     <section class="attributes">
+      <h2>Hats</h2>
       <div class="hats">
-        <h2>Hats</h2>
         <button 
           id="tophat" 
           data-active=false>
@@ -29,8 +30,8 @@
           Crown
         </button>
       </div>
+      <h2>Clothes</h2>
       <div class="clothes">
-        <h2>Clothes</h2>
         <button 
           id="tshirt" 
           data-active=false>
@@ -47,8 +48,8 @@
           Vest
         </button>
       </div>
+      <h2>Accessories</h2>
       <div class="accessories">
-        <h2>Accessories</h2>
         <button 
           id="bowtie" 
           data-active=false>
@@ -65,8 +66,8 @@
           Necklace
         </button>
       </div>
+      <h2>Backgrounds</h2>
       <div class="backgrounds">
-        <h2>Backgrounds</h2>
         <button 
           id="park" 
           data-active=false>
@@ -86,7 +87,7 @@
     </section>
     <section class="display">
       <div class="bear_container">
-        <img src="assets/bear.png">
+        <img id="bear" src="assets/bear.png">
       </div>
       <form>
         <input id="name_outfit_input" type="text" placeholder="name this outfit">

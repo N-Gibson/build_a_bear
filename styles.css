@@ -1,4 +1,18 @@
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 0px;
+}
+
 h1 {
+  background-color: #F5F5F5;
+  box-shadow: 0 4px 2px -2px lightgray;
+  margin: 0px 0px 2px 0px;
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  border-bottom: 2px solid lightgrey;
   text-align: center;
 }
 
@@ -7,35 +21,76 @@ main {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: 
     'attributes display saved';
+    height: 90vh;
+}
+
+#bear {
+  height: 500px;
+  position: sticky;
+  z-index: 10;
 }
 
 .attributes {
   grid-area: attributes;
-  padding: 20px;
+  padding: 20px 20px 0px 20px;
+}
+
+.hats,
+.clothes,
+.accessories {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 80px;
+}
+
+.backgrounds {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+button {
+  border-radius: 5px;
+  font-size: .8em;
+  height: 30px;
+  margin: 5px;
+  width: 100px;
 }
 
 .display {
   display: flex;
   flex-direction: column;
   grid-area: display;
-  padding: 20px;
+  padding: 20px 20px 0px 20px;
 }
 
 form {
+  align-items: center;
   display: flex;
   flex-direction: column;
 }
 
-#name_outfit_input,
-#save_outfit_button {
-  height: 30px;
+#name_outfit_input {
+  border-radius: 5px;
+  font-size: .8em;
+  height: 40px;
   margin: 5px;
+  width: 285px;
+  padding-left: 10px;
+}
+
+#save_outfit_button {
+  border-radius: 5px;
+  font-size: .8em;
+  height: 40px;
+  margin: 5px;
+  width: 300px;
 }
 
 button:hover {
+  background-color: rebeccapurple;
+  border-radius: 5px;
   color: #fff;
   cursor: pointer;
-  background-color: rebeccapurple;
 }
 
 .saved {
@@ -44,7 +99,88 @@ button:hover {
 }
 
 #tophat_identifier {
-  height: 120px;
+  height: 100px;
+  left: 675px;
   position: absolute;
-  left: 660px;
+  transform: rotate(10deg);
+  z-index: 15;
+}
+
+#sunhat_identifier {
+  height: 250px;
+  left: 620px;
+  position: absolute;
+  top: 20px;
+  transform: rotate(-10deg);
+  z-index: 15;
+}
+
+#crown_identifier {
+  height: 100px;
+  left: 675px;
+  position: absolute;
+  transform: rotate(15deg);
+  z-index: 15;
+}
+
+#tshirt_identifier {
+  height: 300px;
+  left: 535px;
+  position: absolute;
+  top: 305px;
+  transform: rotate(7deg);
+  z-index: 15;
+}
+
+#dress_identifier {
+  height: 350px;
+  left: 530px;
+  position: absolute;
+  top: 160px;
+  transform: rotate(5deg);
+  z-index: 15;
+}
+
+#vest_identifier {
+  height: 500px;
+  left: 460px;
+  position: absolute;
+  z-index: 15;
+}
+
+#bowtie_identifier {
+  height: 90px;
+  left: 645px;
+  position: absolute;
+  top: 285px;
+  transform: rotate(10deg);
+  z-index: 15;
+}
+
+#hairbow_identifier {
+  height: 100px;
+  left: 700px;
+  position: absolute;
+  top: 105px;
+  transform: rotate(20deg);
+  z-index: 15;
+}
+
+#necklace_identifier {
+  height: 60px;
+  left: 635px;
+  position: absolute;
+  top: 300px;
+  transform: rotate(10deg);
+  z-index: 15;
+}
+
+#park_identifier,
+#beach_identifier,
+#outerspace_identifier {
+  height: 500px;
+  left: 465px;
+  position: absolute;
+  width: 500px;
+  z-index: 1;
 }
