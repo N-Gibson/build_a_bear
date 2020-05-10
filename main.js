@@ -5,7 +5,7 @@ const main = document.querySelector('main');
 
 main.addEventListener('click', () => {
   if ( event.target.id === 'save_outfit_button' ) {
-    console.log('ok');
+    console.log(event);
     //Run the save function
   } else if ( event.target.id === 'bear' ) {
     return;
