@@ -6,7 +6,7 @@ const main = document.querySelector('main');
 main.addEventListener('click', () => {
   if ( event.target.id === 'save_outfit_button' ) {
     console.log(event);
-    //Run the save function
+    // saveGarment()
   } else if ( event.target.id === 'bear' ) {
     return;
   } else if ( event.target.id ) {
@@ -44,4 +44,8 @@ function toggleGarments(selector, element) {
 function toggleActiveButton(button) {
   const targetButton = document.getElementById(button.id);
   targetButton.classList.toggle('active_button');
+}
+
+function saveGarment() {
+
 }
