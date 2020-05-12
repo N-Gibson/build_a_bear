@@ -24,6 +24,8 @@ function toggleGarments(selector, element) {
   if ( element.dataset.active === 'false' ) {
     element.dataset.active = 'true';
 
+    saveGarment(selector);
+
     bearContainer.insertAdjacentHTML('beforeend', `<img id=${selector}${"_identifier"} src=assets/${selector}${".png"}>`);
 
   } else {
@@ -37,6 +39,7 @@ function toggleGarments(selector, element) {
       }
     });
 
+    removeGarment(selector);
     img.remove();
   }
 };
@@ -47,13 +50,24 @@ function toggleActiveButton(button) {
 }
 
 function saveGarment(selector) {
-  if ( selector === 'park' || 'beach' || 'space') {
-    background = selector
+  if ( selector === 'park' || 'beach' || 'outerspace' ) {
+    background = selector;
   } else {
-    garmentCollection.push(selector)
+    garmentCollection.push(selector);
   }
+
+  console.log('saveGarment', garmentCollection);
+  console.log('saveGarment', background);
 }
 
 function removeGarment(selector) {
-  
+  if ( selector === 'park' || 'beach' || 'outerspace' ) {
+    background = '';
+  } else {
+    let filteredCollection = garmentCollection.filter(garment => garment !== selector);
+    garmentCollection = filteredCollection   
+  }
+
+  console.log('removeGarment', garmentCollection);
+  console.log('removeGarment', background);
 }
