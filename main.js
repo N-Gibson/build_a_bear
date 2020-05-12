@@ -46,6 +46,14 @@ function toggleActiveButton(button) {
   targetButton.classList.toggle('active_button');
 }
 
-function saveGarment() {
+function saveGarment(selector) {
+  if ( selector === 'park' || 'beach' || 'space') {
+    background = selector
+  } else {
+    garmentCollection.push(selector)
+  }
+}
 
+function removeGarment(selector) {
+  
 }
