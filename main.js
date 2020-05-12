@@ -1,6 +1,6 @@
 let outfitCollection = [];
 let garmentCollection = [];
-let backgroundCollection = [];
+let background = '';
 const main = document.querySelector('main');
 
 main.addEventListener('click', () => {
