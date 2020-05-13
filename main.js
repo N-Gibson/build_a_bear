@@ -24,7 +24,7 @@ function toggleGarments(selector, element) {
   if ( element.dataset.active === 'false' ) {
     element.dataset.active = 'true';
 
-    saveGarment(selector);
+    // saveGarment(selector);
 
     bearContainer.insertAdjacentHTML('beforeend', `<img id=${selector}${"_identifier"} src=assets/${selector}${".png"}>`);
 
@@ -39,7 +39,7 @@ function toggleGarments(selector, element) {
       }
     });
 
-    removeGarment(selector);
+    // removeGarment(selector);
     img.remove();
   }
 };
@@ -49,25 +49,25 @@ function toggleActiveButton(button) {
   targetButton.classList.toggle('active_button');
 }
 
-function saveGarment(selector) {
-  if ( selector === 'park' || 'beach' || 'outerspace' ) {
-    background = selector;
-  } else {
-    garmentCollection.push(selector);
-  }
+// function saveGarment(selector) {
+//   if ( selector === 'park' || 'beach' || 'outerspace' ) {
+//     background = selector;
+//   } else {
+//     garmentCollection.push(selector);
+//   }
 
-  console.log('saveGarment', garmentCollection);
-  console.log('saveGarment', background);
-}
+//   console.log('saveGarment', garmentCollection);
+//   console.log('saveGarment', background);
+// }
 
-function removeGarment(selector) {
-  if ( selector === 'park' || 'beach' || 'outerspace' ) {
-    background = '';
-  } else {
-    let filteredCollection = garmentCollection.filter(garment => garment !== selector);
-    garmentCollection = filteredCollection   
-  }
+// function removeGarment(selector) {
+//   if ( selector === 'park' || 'beach' || 'outerspace' ) {
+//     background = '';
+//   } else {
+//     let filteredCollection = garmentCollection.filter(garment => garment !== selector);
+//     garmentCollection = filteredCollection   
+//   }
 
-  console.log('removeGarment', garmentCollection);
-  console.log('removeGarment', background);
-}
+//   console.log('removeGarment', garmentCollection);
+//   console.log('removeGarment', background);
+// }
