@@ -1,4 +1,6 @@
 let outfitCollection = [];
+let garments = [];
+let background = '';
 const main = document.querySelector('main');
 
 main.addEventListener('click', () => {
@@ -24,7 +26,7 @@ function toggleGarments(selector, element) {
   if ( element.dataset.active === 'false' ) {
     element.dataset.active = 'true';
 
-    // saveGarment(selector);
+    saveGarment(selector);
 
     bearContainer.insertAdjacentHTML('beforeend', `<img id=${selector}${"_identifier"} src=assets/${selector}${".png"}>`);
 
@@ -39,7 +41,7 @@ function toggleGarments(selector, element) {
       }
     });
 
-    // removeGarment(selector);
+    removeGarment(selector);
     img.remove();
   }
 };
@@ -47,27 +49,29 @@ function toggleGarments(selector, element) {
 function toggleActiveButton(button) {
   const targetButton = document.getElementById(button.id);
   targetButton.classList.toggle('active_button');
+};
+
+function saveGarment(selector) {
+  if (selector === 'park') {
+    background = selector;
+  } else if (selector === 'beach') {
+    background = selector;
+  } else if (selector === 'outerspace') {
+    background = selector;
+  } else {
+    garments.push(selector);
+  }
+};
+
+function removeGarment(selector) {
+  if (selector === 'park') {
+    background = '';
+  } else if (selector === 'beach') {
+    background = '';
+  } else if (selector === 'outerspace') {
+    background = '';
+  } else {
+    let filteredGarments = garments.filter(garment => garment !== selector);
+    garments = filteredGarments;
+  }
 }
-
-// function saveGarment(selector) {
-//   if ( selector === 'park' || 'beach' || 'outerspace' ) {
-//     background = selector;
-//   } else {
-//     garmentCollection.push(selector);
-//   }
-
-//   console.log('saveGarment', garmentCollection);
-//   console.log('saveGarment', background);
-// }
-
-// function removeGarment(selector) {
-//   if ( selector === 'park' || 'beach' || 'outerspace' ) {
-//     background = '';
-//   } else {
-//     let filteredCollection = garmentCollection.filter(garment => garment !== selector);
-//     garmentCollection = filteredCollection   
-//   }
-
-//   console.log('removeGarment', garmentCollection);
-//   console.log('removeGarment', background);
-// }
