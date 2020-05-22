@@ -4,16 +4,19 @@ let background = '';
 const main = document.querySelector('main');
 
 main.addEventListener('click', () => {
-  if ( event.target.id === 'save_outfit_button' ) {
-    console.log(event);
-    // saveGarment()
+  if (event.target.id === 'save_outfit_button') {
+    saveOutfit(event.target);
   }
 
-  if ( event.target.id === 'bear' ) {
+  if (event.target.id === 'bear') {
+    return;
+  }
+
+  if (event.target.id === 'name_outfit_input') {
     return;
   }
   
-  if ( event.target.id ) {
+  if (event.target.id) {
     toggleGarments(event.target.id, event.target);
     toggleActiveButton(event.target);
   }
@@ -74,4 +77,10 @@ function removeGarment(selector) {
     let filteredGarments = garments.filter(garment => garment !== selector);
     garments = filteredGarments;
   }
+}
+
+function saveOutfit(target) {
+  let outfitName = target.parentElement.childNodes[1].value;
+  let newOutfit = new Outfits(outfitName, garments, background);
+  console.log(newOutfit);
 }
