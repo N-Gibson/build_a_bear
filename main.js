@@ -77,10 +77,13 @@ function removeGarment(selector) {
     let filteredGarments = garments.filter(garment => garment !== selector);
     garments = filteredGarments;
   }
-}
+};
 
 function saveOutfit(target) {
   let outfitName = target.parentElement.childNodes[1].value;
   let newOutfit = new Outfits(outfitName, garments, background);
+
+  const outfitsContainer = document.querySelector('.saved');
+outfitsContainer.insertAdjacentHTML('beforeend', `<div><h3>${outfitName}<h3/><button>Delete<button/><div/>`)
   console.log(newOutfit);
-}
+};
