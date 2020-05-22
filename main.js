@@ -5,13 +5,15 @@ main.addEventListener('click', () => {
   if ( event.target.id === 'save_outfit_button' ) {
     console.log(event);
     // saveGarment()
-  } else if ( event.target.id === 'bear' ) {
+  }
+
+  if ( event.target.id === 'bear' ) {
     return;
-  } else if ( event.target.id ) {
+  }
+  
+  if ( event.target.id ) {
     toggleGarments(event.target.id, event.target);
     toggleActiveButton(event.target);
-  } else {
-    return;
   }
 });
 
