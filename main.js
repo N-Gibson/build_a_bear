@@ -83,7 +83,12 @@ function saveOutfit(target) {
   let outfitName = target.parentElement.childNodes[1].value;
   let newOutfit = new Outfits(outfitName, garments, background);
 
+  // fix the button press that runs toggleGarments function
+
   const outfitsContainer = document.querySelector('.saved');
-outfitsContainer.insertAdjacentHTML('beforeend', `<div><h3>${outfitName}<h3/><button>Delete<button/><div/>`)
-  console.log(newOutfit);
+  outfitsContainer.insertAdjacentHTML('beforeend', 
+  `<div class="saved_outfit" data-id=${newOutfit.id}>
+    <h3>${outfitName}<h3/>
+    <button>Delete<button/>
+  <div/>`)
 };
