@@ -78,11 +78,12 @@ function removeGarment(selector) {
 function saveOutfit(target) {
   let outfitName = target.parentElement.childNodes[1].value;
   let newOutfit = new Outfits(outfitName, garments, background);
+  outfitCollection.push(newOutfit);
 
   const outfitsContainer = document.querySelector('.saved');
   outfitsContainer.insertAdjacentHTML('beforeend', 
   `<div class="saved_outfit" data-id=${newOutfit.id}>
-    <h3>${outfitName}<h3/>
-    <button>Delete<button/>
+    <h3>${outfitName}</h3>
+    <button>Delete</button>
   <div/>`)
 };
