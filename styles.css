@@ -93,6 +93,11 @@ button:hover {
   cursor: pointer;
 }
 
+.active_button {
+  background-color: rebeccapurple;
+  color: #fff;
+}
+
 .saved {
   grid-area: saved;
   padding: 20px;
