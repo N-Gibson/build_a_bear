@@ -6,19 +6,15 @@ const main = document.querySelector('main');
 main.addEventListener('click', () => {
   if (event.target.id === 'save_outfit_button') {
     saveOutfit(event.target);
-  }
-
-  if (event.target.id === 'bear') {
+  }  else if (event.target.id === 'bear') {
     return;
-  }
-
-  if (event.target.id === 'name_outfit_input') {
+  }  else if (event.target.id === 'name_outfit_input') {
     return;
-  }
-  
-  if (event.target.id) {
+  } else if (event.target.id) {
     toggleGarments(event.target.id, event.target);
     toggleActiveButton(event.target);
+  } else {
+    console.log('something else is happening');
   }
 });
 
@@ -82,8 +78,6 @@ function removeGarment(selector) {
 function saveOutfit(target) {
   let outfitName = target.parentElement.childNodes[1].value;
   let newOutfit = new Outfits(outfitName, garments, background);
-
-  // fix the button press that runs toggleGarments function
 
   const outfitsContainer = document.querySelector('.saved');
   outfitsContainer.insertAdjacentHTML('beforeend', 
