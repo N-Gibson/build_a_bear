@@ -87,3 +87,9 @@ function saveOutfit(target) {
     <button>Delete</button>
   <div/>`)
 };
+
+function deleteOutfit(event, target) {
+  if (target) {
+    event.target.closest(target).delete();
+  }
+}
