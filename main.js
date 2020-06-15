@@ -13,8 +13,10 @@ main.addEventListener('click', () => {
   } else if (event.target.id) {
     toggleGarments(event.target.id, event.target);
     toggleActiveButton(event.target);
+  } else if (event.target.classList.value === 'delete') {
+    deleteOutfit(event);
   } else {
-    console.log('something else is happening');
+    console.log(event.target);
   }
 });
 
@@ -84,6 +86,12 @@ function saveOutfit(target) {
   outfitsContainer.insertAdjacentHTML('beforeend', 
   `<div class="saved_outfit" data-id=${newOutfit.id}>
     <h3>${outfitName}</h3>
-    <button>Delete</button>
+    <button class="delete">Delete</button>
   <div/>`)
 };
+
+function deleteOutfit(event) {
+  event.target.closest('.delete').parentElement.remove();
+}
+
+// NEED TO ADD FUNCTION WHERE OUTFIT OBJ IS FOUND BASED ON ID AND THEN FED INTO A FN THAT REPOPULATES THE HTML 
